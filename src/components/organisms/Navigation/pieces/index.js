@@ -1,0 +1,7 @@
+export { default as Link } from './link'
+export { default as CategoriesTitle } from './categoriestitle'
+export { default as ImageHolder } from './imageholder'
+export { default as Title } from './title'
+export { default as CategoriesHolder } from './categoriesholder'
+export { default as Nav } from './nav'
+export { default as MouseTrap } from './mousetrap'

@@ -1,0 +1,51 @@
+{
+  "name": "book_library",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.2.0",
+    "axios": "^0.18.0",
+    "axios-case-converter": "^0.1.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "change-case": "^3.0.2",
+    "cors-anywhere": "^0.4.1",
+    "cross-env": "^5.1.4",
+    "dotenv": "^8.1.0",
+    "express": "^4.16.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "moment": "^2.21.0",
+    "nodemon": "^1.17.2",
+    "pg": "^7.4.1",
+    "prettier": "^1.11.1",
+    "prop-types": "^15.6.1",
+    "query-string": "^5.1.1",
+    "react": "^16.3.0",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-spring": "^5.0.1",
+    "sequelize": "^4.37.3",
+    "styled-components": "^3.2.3"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=src/ react-scripts start",
+    "build": "cross-env NODE_PATH=src/ react-scripts build",
+    "test": "cross-env NODE_PATH=src/ react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "server": "nodemon \"./server/index.js\"",
+    "cc": "./new_component.sh",
+    "co": "./new_context.sh",
+    "csc": "./new_stateless_component.sh",
+    "precommit": "lint-staged",
+    "prettier": "prettier --single-quote --trailing-comma es5 --no-semi --print-width 120 --write \"./**/*.js\""
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --trailing-comma es5 --no-semi --print-width 120 --write",
+      "git add"
+    ]
+  }
+}
