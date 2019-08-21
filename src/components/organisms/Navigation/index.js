@@ -51,7 +51,8 @@ class Navigation extends Component {
           </ImageHolder>
           <Title>Personal Library</Title>
           <CategoriesTitle>
-            <Icon icon="categories" />Categories
+            <Icon icon="categories" />
+            Categories
           </CategoriesTitle>
           <CategoriesHolder entries={categories.length}>
             <Scroll>

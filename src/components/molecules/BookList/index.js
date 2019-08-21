@@ -98,7 +98,9 @@ class BookList extends Component {
             {sections.map(s => (
               <Fragment key={s.initial}>
                 <LetterItem label={s.initial} key={s.initial} layout={layout} />
-                {s.books.map(b => <BookItem book={b} key={b.isbn} layout={layout} />)}
+                {s.books.map(b => (
+                  <BookItem book={b} key={b.isbn} layout={layout} />
+                ))}
               </Fragment>
             ))}
           </Items>
